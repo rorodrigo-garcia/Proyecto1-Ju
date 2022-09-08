@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrabajoJuli</title>
+</head>
+<body style="background-color:black">
+    <h1 style="background-color: pink" >Mis Niños </h1>
+    {% for mascota in listita %}
+    <ul>
+     <li>
+        <h2 style="color: violet;"> {{mascota.nombre}}</h2>
+        <h2 style="color: red;"> {{mascota.parentesco}}</h2>
+        <h2 style="color: white;"> {{mascota.edad}}</h2>
+        <h2 style="color: yellow;"> {{mascota.cumpleanios}}</h2>
+     </li>
+    </ul>
+    {% endfor %}
+</body>
+</html>
